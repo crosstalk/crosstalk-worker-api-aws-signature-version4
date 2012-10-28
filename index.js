@@ -5,8 +5,7 @@
  */
 "use strict";
 
-var crypto = require( 'crypto' ),
-    logger = require( 'logger' );
+var crypto = require( 'crypto' );
 
 var ALGORITHM = "AWS4-HMAC-SHA256",
     CREDENTIAL_TERMINATION_STRING = "aws4_request",
@@ -226,8 +225,6 @@ var version4 = function version4 ( params, callback ) {
   var canonicalHeaders = createCanonicalHeaders( headers );
   var signedHeaders = createSignedHeaders( headers );
 
-  logger.debug( 'SIGNED HEADERS:', signedHeaders );
-
   var credentialScope = createCredentialScope( basicISODate, region, service );
   var credential = createCredential( awsAccessKeyId, credentialScope );
   var canonicalQueryString = createCanonicalQueryString( queryString, 
@@ -243,8 +240,6 @@ var version4 = function version4 ( params, callback ) {
      canonicalUri, canonicalQueryString, canonicalHeaders, signedHeaders,
      encodedPayload );
 
-  logger.debug( 'CANONICAL REQUEST:', canonicalRequest );
-
   //
   // Task 2: Create a String to Sign
   // http://docs.amazonwebservices.com/general/latest/gr/sigv4-create-string-to-sign.html
@@ -252,8 +247,6 @@ var version4 = function version4 ( params, callback ) {
 
   var stringToSign = createStringToSign( ALGORITHM, basicISODate,
      credentialScope, canonicalRequest );
-
-  logger.debug( 'STRING TO SIGN:', stringToSign );
 
   //
   // Task 3: Calculate the Signature
