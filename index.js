@@ -186,7 +186,7 @@ var version4 = function version4 ( params, callback ) {
 
   if ( ! awsAccessKeyId ) return callback( { message : "missing awsAccessKeyId" } );
   if ( ! headers ) return callback( { message : "missing headers" } );
-  if ( ! queryString ) return callback( { message : "missing queryString" } );
+  if ( typeof( queryString ) == "undefined" ) return callback( { message : "missing queryString" } );
   if ( ! region ) return callback( { message : "missing region" } );
   if ( ! secretAccessKey ) return callback( { message : "missing secretAccessKey" } );
   if ( ! service ) return callback( { message : "missing service" } );
