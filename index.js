@@ -151,6 +151,7 @@ var hmac = function hmac( key, stringToSign, format ) {
 var trimall = function trimall ( string ) {
 
   string = string || "";
+  string = "" + string; // make sure numbers are converted to strings and such
 
   var trimmedString = "",
       parts = string.split( '"' ),
