@@ -1,0 +1,14 @@
+{
+  "name": "crosstalk-worker-api-aws-signature-version4",
+  "version": "0.0.0",
+  "description": "Crosstalk worker for generating version 4 AWS signature",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tristan Slominski <tristan.slominski@gmail.com>",
+  "crosstalk": {
+    "type": "worker"
+  },
+  "private": true
+}
