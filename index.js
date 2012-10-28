@@ -52,6 +52,8 @@ var createCanonicalHeaders = function createCanonicalHeaders ( headers ) {
 var createCanonicalQueryString = function createCanonicalQueryString (
    queryString, credential, basicISODate, signedHeaders ) {
      
+  if ( queryString.length == 0 ) { return queryString; } // nothing to do
+
   var canonicalQueryString = "";
 
   queryString = queryString.split( '&' );
