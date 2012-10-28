@@ -1,6 +1,6 @@
 {
   "name": "crosstalk-worker-api-aws-signature-version4",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Crosstalk worker for generating version 4 AWS signature",
   "main": "index.js",
   "scripts": {
