@@ -3,12 +3,24 @@
   "version": "0.0.4",
   "description": "Crosstalk worker for generating version 4 AWS signature",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:crosstalk/crosstalk-worker-api-aws-signature-version4.git"
   },
-  "author": "Tristan Slominski <tristan.slominski@gmail.com>",
+  "keywords": [
+    "crosstalk",
+    "worker",
+    "aws",
+    "signature",
+    "version 4"
+  ],
+  "author": "Crosstalk Systems Inc. <developers@crxtalk.com>",
+  "maintainers": [
+    "Tristan Slominski <tristan.slominski@gmail.com>"
+  ],
   "crosstalk": {
     "type": "worker"
   },
+  "license": "MIT",
   "private": true
 }
