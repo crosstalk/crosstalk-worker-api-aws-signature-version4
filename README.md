@@ -11,7 +11,7 @@ crosstalk-worker-api-aws-signature-version4
 
 ## crosstalk.on
 
-[api.aws.signature.version4](/crosstalk/crosstalk-worker-api-aws-signature-version4/wiki/api.aws.signature.version4) - Creates AWS Version 4 signature
+[api.aws.signature.version4](https://github.com/crosstalk/crosstalk-worker-api-aws-signature-version4/wiki/api.aws.signature.version4) - Creates AWS Version 4 signature
 
 ## crosstalk.emit
 
