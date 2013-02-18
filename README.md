@@ -3,6 +3,8 @@ crosstalk-worker-api-aws-signature-version4
 
 `crosstalk-worker-api-aws-signature-version4` is a Crosstalk worker that calculates AWS Version 4 signatures for HTTP requests.
 
+_Click on links below for detailed documentation._
+
 ## Configuration
 
 ```json
